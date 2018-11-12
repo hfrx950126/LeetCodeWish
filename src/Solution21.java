@@ -8,6 +8,8 @@ public class Solution21 {
     }
 
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+
+
         // Base case: return other list if one is null.
         // Takes care of (null, null), (null, non-null), and (non-null, null)
         if (l1 == null) return l2;
