@@ -20,4 +20,11 @@ class Solution53 {
         }
         return max;
     }
+    public static void main(String args[]){
+        String a = "asd asd as";
+        System.out.println(a.length());
+
+    }
+
+
 }
