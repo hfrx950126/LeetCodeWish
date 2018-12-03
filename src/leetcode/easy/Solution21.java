@@ -1,3 +1,5 @@
+package leetcode.easy;
+
 public class Solution21 {
     public class ListNode{
         int val;

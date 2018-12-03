@@ -1,3 +1,5 @@
+package leetcode.easy;
+
 /**
  * solution27 Remove Element
  */

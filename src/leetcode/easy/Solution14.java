@@ -1,3 +1,5 @@
+package leetcode.easy;
+
 /**
  * Longest Common Prefix
  */

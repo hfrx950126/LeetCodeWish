@@ -1,3 +1,5 @@
+package leetcode.easy;
+
 /**
  * Remove Duplicates from Sorted Array
  */

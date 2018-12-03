@@ -1,3 +1,5 @@
+package leetcode.easy;
+
 class Solution53 {
     public int maxSubArray(int[] nums) {
         if (nums.length == 0){

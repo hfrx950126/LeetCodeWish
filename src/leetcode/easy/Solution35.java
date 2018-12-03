@@ -1,3 +1,5 @@
+package leetcode.easy;
+
 public class Solution35 {
     public int searchInsert(int[] nums, int target) {
         if(nums == null || nums.length == 0) return 0;

@@ -1,3 +1,5 @@
+package leetcode.easy;
+
 public class Solution110 {
     private boolean result = true;
 
@@ -21,8 +23,7 @@ public class Solution110 {
             return 0;
         int l = maxLeftDepth(root.left);
         int r = maxLeftDepth(root.right);
-        System.out.println("l="+l);
-        System.out.println("r="+r);
+        System.out.println("l:" + l + ", r:" + r + ", value:" + root.val);
         return 1 + Math.max(l, r);
     }
 

@@ -1,9 +1,10 @@
+package leetcode.easy;
 
- class ListNode {
-      int val;
-      ListNode next;
-      ListNode(int x) { val = x; }
- }
+class ListNode {
+     int val;
+     ListNode next;
+     ListNode(int x) { val = x; }
+}
 
 public class Solution83 {
     public ListNode deleteDuplicates(ListNode head) {

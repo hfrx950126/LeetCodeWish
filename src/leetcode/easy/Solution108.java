@@ -1,3 +1,5 @@
+package leetcode.easy;
+
 public class Solution108 {
     /**
      * 这道题是要将有序数组转为二叉搜索树，所谓二叉搜索树，是一种始终满足左<根<右的特性，

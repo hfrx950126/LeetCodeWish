@@ -1,3 +1,5 @@
+package leetcode.easy;
+
 public class Solution70 {
     public int climbStairs(int n) {
         int[] array = new int[n+1];

@@ -1,3 +1,5 @@
+package leetcode.easy;
+
 class Solution58 {
     public int lengthOfLastWord(String s) {
         s = s.trim();

@@ -1,3 +1,5 @@
+package leetcode.easy;
+
 class Solution28{
     public int strStr(String haystack, String needle) {
         if(needle == null || needle.length() == 0)

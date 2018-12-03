@@ -1,3 +1,5 @@
+package leetcode.easy;
+
 class Solution38 {
     public String countAndSay(int n) {
         return countAndSay(n, 1, "1");

@@ -1,3 +1,5 @@
+package leetcode.easy;
+
 public class Solution88 {
     public void merge(int A[], int m, int B[], int n) {
         int i = m - 1, j = n - 1, k = m + n - 1;

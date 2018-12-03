@@ -1,3 +1,5 @@
+package leetcode.easy;
+
 public class Solution69 {
     public int mySqrt(int x) {
         if(x <= 0) return 0;

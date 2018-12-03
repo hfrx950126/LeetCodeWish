@@ -1,3 +1,5 @@
+package leetcode.easy;
+
 import java.util.LinkedList;
 import java.util.Queue;
 
