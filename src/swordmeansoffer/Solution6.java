@@ -1,5 +1,7 @@
 package swordmeansoffer;
 
+
+
 /**
  * 重建二叉树
  */
@@ -7,11 +9,12 @@ public class Solution6 {
     /*
      * 二叉树节点类
      */
-    class TreeNode {
+    class BinaryTreeNode {
         int val;
-        TreeNode left;
-        TreeNode right;
-        TreeNode(int x) {
+        BinaryTreeNode left;
+        BinaryTreeNode right;
+        BinaryTreeNode next;
+        BinaryTreeNode(int x) {
             this.val = x;
         }
     }
@@ -25,7 +28,7 @@ public class Solution6 {
      * @param in    中序遍历
      * @return        二叉树根节点
      */
-    public TreeNode reConstructBinaryTree(int[] pre,int[] in) {
+    public BinaryTreeNode reConstructBinaryTree(int[] pre,int[] in) {
          /*
           * 输入合法性判断， 不能为空，先序和后序长度要一致
           */
@@ -44,7 +47,7 @@ public class Solution6 {
      * @param ie    中序遍历的结束位置
      * @return        数的根节点
      */
-    private TreeNode construct(int[] pre, int ps, int pe, int[] in, int is, int ie) {
+    private BinaryTreeNode construct(int[] pre, int ps, int pe, int[] in, int is, int ie) {
         if(ps > pe) return null;
 
         // 取前序遍历的第一个数字就是根节点
@@ -59,7 +62,7 @@ public class Solution6 {
             throw new RuntimeException("Invalid Iuput!");
 
         // 创建当前根节点，并为根节点赋值
-        TreeNode node = new TreeNode(value);
+        BinaryTreeNode node = new BinaryTreeNode(value);
         // 递归调用构建当前节点的左子树
         node.left = construct(pre, ps+1, ps+index-is, in, is, index-1);
         // 递归调用构建当前节点的右子树
@@ -69,7 +72,7 @@ public class Solution6 {
     }
 
 
-    private void printTree(TreeNode root) {
+    private void printTree(BinaryTreeNode root) {
         if(root != null) {
             printTree(root.left);
             System.out.println(root.val + " ");
@@ -81,7 +84,7 @@ public class Solution6 {
         Solution6 test = new Solution6();
         int[] pre = {1, 2, 4, 7, 3, 5, 6, 8};
         int[] in = {4, 7, 2, 1, 5, 3, 8, 6};
-        TreeNode node = test.reConstructBinaryTree(pre, in);
+        BinaryTreeNode node = test.reConstructBinaryTree(pre, in);
         test.printTree(node);
 
     }
