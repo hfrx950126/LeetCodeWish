@@ -2,6 +2,9 @@ package swordmeansoffer;
 
 import java.util.Stack;
 
+/**
+ * 用两个栈实现一个队列
+ */
 public class Solution8 {
 
         Stack<Integer> stack1 = new Stack<Integer>();
