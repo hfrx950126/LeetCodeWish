@@ -4,6 +4,11 @@ package swordmeansoffer;
  * 打印从1 到最大的N位
  */
 public class Solution16 {
+    /**
+     * 解法一
+     *
+     * @param n
+     */
     public void printToMaxOfDigits(int n) {
         if (n <= 0) {
             System.out.println("输入的n没有意义");
@@ -60,10 +65,43 @@ public class Solution16 {
         System.out.println();
     }
 
+    /**
+     * 解法二
+     *
+     * @param
+     */
+//打印1到最大的n位数的主方法
+    public void printToMaxOfDigits2(int n) {
+        if (n <= 0) {
+            System.out.println("输入的n没有意义");
+            return;
+        }
+        char number[] = new char[n];
+        for (int i = 0; i < number.length; i++) {
+            number[i] = '0';
+        }
+        for (int i = 0; i < 10; ++i) {
+            number[0] = (char) (i + '0');
+            printToMaxOfNDigitsRecursively2(number, n, 0);
+        }
+    }
 
-    public static void main(String args[]){
+    //利用递归实现1到最大的n位数的全排列
+    public void printToMaxOfNDigitsRecursively2(char[] number, int n, int index) {
+        if (index == n - 1) {
+            printNumber(number);
+            return;
+        }
+        for (int i = 0; i < 10; ++i) {
+            number[index + 1] = (char) (i + '0');
+            printToMaxOfNDigitsRecursively2(number, n, index + 1);
+        }
+    }
+
+
+    public static void main(String args[]) {
         Solution16 solution16 = new Solution16();
-        solution16.printToMaxOfDigits(3);
+        solution16.printToMaxOfDigits(20);
     }
 
 
