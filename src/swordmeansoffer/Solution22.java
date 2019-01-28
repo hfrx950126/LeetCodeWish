@@ -1,5 +1,9 @@
 package swordmeansoffer;
 
+import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.atomic.AtomicIntegerFieldUpdater;
+
 /**
  * 链表中环的入口节点
  */
@@ -23,5 +27,7 @@ public class Solution22 {
         }
         return null;
     }
-
+   public static void main(String args[]){
+       System.out.print(System.currentTimeMillis());
+   }
 }
